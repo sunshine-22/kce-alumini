@@ -58,7 +58,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="https://kce.ac.in/" class="nav-item nav-link">About</a>
             <a href="https://kce.ac.in/alumni-success-stories/" class="nav-item nav-link">Alumini Success Stories</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Academic Courses</a>
@@ -93,7 +93,7 @@
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="register.html" class="btn btn-primary py-4 px-lg-5 ">SignIn<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="login.html" class="btn btn-primary py-4 px-lg-5 ">SignIn<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -107,31 +107,31 @@
           <div class="col-md-7">
             <h3>Login to <strong>KCE Alumini</strong></h3>
             <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
-            <form action="#" method="post">
+            <form>
               <div class="form-group first mt-2">
                 <label for="username">Name</label>
                 <input type="text" class="form-control" placeholder="Enter Your Name" id="username" required>
               </div>
               <div class="form-group first mt-2">
                 <label for="username">E-mail</label>
-                <input type="text" class="form-control" placeholder="Enter your E-mail" id="username" required>
+                <input type="text" class="form-control" placeholder="Enter your E-mail" id="email" required>
               </div>
               <div class="form-group first mt-2">
                 <label for="username">Class of (Year of Passing)</label>
-                <input type="number" class="form-control" placeholder="2022-2025" id="username" required>
+                <input type="text" class="form-control" placeholder="2022-2025" id="year" required>
               </div>
               <div class="form-group first mt-2">
                 <label for="username">Enter Mobile Number</label>
-                <input type="number" class="form-control" placeholder="Enter Mobile number" id="username" required>
+                <input type="text" class="form-control" placeholder="Enter Mobile number" id="mobile" required>
               </div>
               <div class="form-group last mt-2">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" placeholder="Your Password" id="password" required>
+                <input type="text" class="form-control" placeholder="Your Password" id="password" required>
               </div>
               
               
 
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <input type="button" value="Register" class="btn btn-block btn-primary mt-2" onclick="register()">
 
             </form>
           </div>
@@ -187,11 +187,11 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a class="border-bottom" href="#">kcealumini.in</a> All Right Reserved.
 
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                    Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    Designed By <a class="border-bottom" href="#">Sabarishkumar T,Abiness JR</a><br><br>
+                    
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
@@ -219,7 +219,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    <script src="authentication.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
